@@ -8,33 +8,21 @@ class MaquinaDeCafe(
     var dinheiro: Int = 550
 ) {
 
-    private fun compraCafe(tipoCafe:Int) {
-        val verificaExpresso = agua >= 250 && cafe >= 16 && copos >= 1
-        val verificaCafeLeite = agua >= 350 && leite >= 75 && cafe >= 20 && copos >= 1
-        val verificaCappuccino = agua >= 200 && leite >= 100 && cafe >= 12 && copos >= 1
-        var falta = ""
 
-        when {
-            cafe < 12 -> falta += "coffe"
-            agua < 200 -> falta += "water"
-            leite < 75 -> falta += "milk"
-            copos == 0 -> falta += "cups"
-        }
-
-        when {
-            tipoCafe == 1 && verificaExpresso -> {
-                agua -= 250 ;cafe -= 16; dinheiro += 4; copos -= 1
-                println("I have enough resources, making you a coffee!")
+    fun compraCafe(bebida: Bebida): String {
+        return when {
+            this.agua < bebida.agua -> "Sorry, not enough water!"
+            this.leite < bebida.leite -> "Sorry, not enough milk!"
+            this.cafe < bebida.cafe -> "Sorry, not enough coffee beans!"
+            this.copos < 1 -> "Sorry, not enough disposable cups!"
+            else -> {
+                this.agua -= bebida.agua
+                this.leite -= bebida.leite
+                this.cafe -= bebida.cafe
+                this.copos--
+                this.dinheiro += bebida.preco
+                "I have enough resources, making you a coffee!"
             }
-            tipoCafe == 2 && verificaCafeLeite -> {
-                agua -= 350; leite -= 75; cafe -= 20; dinheiro += 7; copos -= 1
-                println("I have enough resources, making you a coffee!")
-            }
-            tipoCafe == 3 && verificaCappuccino -> {
-                agua -= 200; leite -= 100; cafe -= 12; dinheiro += 6; copos -=1
-                println("I have enough resources, making you a coffee!")
-            }
-            else -> println("Sorry, not enough $falta!")
         }
     }
 
@@ -73,7 +61,7 @@ class MaquinaDeCafe(
     }
 
 
-    fun menu() {
+    private fun menu() {
         while (true){
             println("Write action (buy, fill, take, remaining, exit): ")
             val acao = readln()
@@ -85,7 +73,8 @@ class MaquinaDeCafe(
                     val tipoCafe = readln()
 
                     if (tipoCafe == "back") continue
-                    compraCafe(tipoCafe.toInt())
+
+                    compraCafe(Bebida.values()[tipoCafe.toInt() - 1])
                 }
 
                 "fill" -> { reabasteceMaquina() }
@@ -96,5 +85,10 @@ class MaquinaDeCafe(
             }
         }
 
+    }
+
+
+    fun getMenu() {
+        return menu()
     }
 }

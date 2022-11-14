@@ -374,9 +374,16 @@ files:
 - name: src/machine/MaquinaDeCafe.kt
   visible: true
   learner_created: true
-feedback_link: https://hyperskill.org/projects/67/stages/363/implement#comment
-status: Solved
+feedback_link: https://hyperskill.org/learn/step/5662#comment
+status: Failed
 feedback:
-  message: Congratulations!
-  time: "Sun, 13 Nov 2022 00:51:10 UTC"
+  message: |-
+    Wrong answer in test #1
+
+    Please find below the output of your program during this failed test.
+
+    ---
+
+    Hello, world!
+  time: "Mon, 14 Nov 2022 20:06:20 UTC"
 record: 4

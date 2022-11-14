@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CoffeeMachineTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-13T03:01:14" hostname="fedora" time="0.324">
+<testsuite name="CoffeeMachineTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-14T20:15:14" hostname="fedora" time="0.366">
   <properties/>
-  <testcase name="start" classname="CoffeeMachineTest" time="0.324"/>
+  <testcase name="start" classname="CoffeeMachineTest" time="0.366"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Write action (buy, fill, take, remaining, exit): 
@@ -15,11 +15,9 @@ $550 of money
 Write action (buy, fill, take, remaining, exit): 
 > buy
 What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: , back - to main menu: > 2
-I have enough resources, making you a coffee!
 Write action (buy, fill, take, remaining, exit): 
 > buy
 What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: , back - to main menu: > 2
-Sorry, not enough water!
 Write action (buy, fill, take, remaining, exit): 
 > fill
 Write how many ml of water you want to add: 
@@ -33,7 +31,6 @@ Write how many disposable cups you want to add:
 Write action (buy, fill, take, remaining, exit): 
 > buy
 What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: , back - to main menu: > 2
-I have enough resources, making you a coffee!
 Write action (buy, fill, take, remaining, exit): 
 > take
 I gave you $564
@@ -90,7 +87,6 @@ $550 of money
 Write action (buy, fill, take, remaining, exit): 
 > buy
 What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: , back - to main menu: > 1
-I have enough resources, making you a coffee!
 Write action (buy, fill, take, remaining, exit): 
 > remaining
 The coffee machine has:
@@ -114,7 +110,6 @@ $550 of money
 Write action (buy, fill, take, remaining, exit): 
 > buy
 What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: , back - to main menu: > 2
-I have enough resources, making you a coffee!
 Write action (buy, fill, take, remaining, exit): 
 > remaining
 The coffee machine has:
@@ -138,7 +133,6 @@ $550 of money
 Write action (buy, fill, take, remaining, exit): 
 > buy
 What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: , back - to main menu: > 3
-I have enough resources, making you a coffee!
 Write action (buy, fill, take, remaining, exit): 
 > remaining
 The coffee machine has:

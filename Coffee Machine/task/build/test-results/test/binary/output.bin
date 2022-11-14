@@ -11,11 +11,9 @@
 2Write action (buy, fill, take, remaining, exit): 
 > buy
 ]What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: , back - to main menu: > 2
-.I have enough resources, making you a coffee!
 2Write action (buy, fill, take, remaining, exit): 
 > buy
 ]What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: , back - to main menu: > 2
-Sorry, not enough water!
 2Write action (buy, fill, take, remaining, exit): 
 > fill
 -Write how many ml of water you want to add: 
@@ -29,7 +27,6 @@
 2Write action (buy, fill, take, remaining, exit): 
 > buy
 ]What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: , back - to main menu: > 2
-.I have enough resources, making you a coffee!
 2Write action (buy, fill, take, remaining, exit): 
 > take
 I gave you $564
@@ -86,7 +83,6 @@
 2Write action (buy, fill, take, remaining, exit): 
 > buy
 ]What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: , back - to main menu: > 1
-.I have enough resources, making you a coffee!
 2Write action (buy, fill, take, remaining, exit): 
 > remaining
 The coffee machine has:
@@ -110,7 +106,6 @@
 2Write action (buy, fill, take, remaining, exit): 
 > buy
 ]What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: , back - to main menu: > 2
-.I have enough resources, making you a coffee!
 2Write action (buy, fill, take, remaining, exit): 
 > remaining
 The coffee machine has:
@@ -134,7 +129,6 @@
 2Write action (buy, fill, take, remaining, exit): 
 > buy
 ]What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: , back - to main menu: > 3
-.I have enough resources, making you a coffee!
 2Write action (buy, fill, take, remaining, exit): 
 > remaining
 The coffee machine has:
